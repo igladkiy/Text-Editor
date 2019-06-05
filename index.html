@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>task26</title>
+    <link rel="stylesheet" href="style.css">
+	<script src="jquery-3.3.1.js"></script>
+	<script src="audioPlayer.js"></script>
+</head>
+<body>
+  
+    <span id="list1">
+        <div id="box1">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Where does it come from?
+        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+        The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.Why do we use it?
+        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).Where can I get some?
+        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
+        </div>
+        
+        
+        <div id="box2">
+        
+   
+    <ul id="playlist">
+        <li class="current-song"><a href="music/antit-la_-_lego.mp3">Антитіла - Лего</a></li>
+        <li><a href="music/bishop_briggs_-_river.mp3">Bishop Briggs - River</a></li>
+        <li><a href="music/the-hardkiss_-_korabl.mp3">The Hardkiss - Кораблі</a></li>
+    </ul>
+ 	<audio src="" controls id="audioPlayer" autoplay></audio>
+    <script>
+        audioPlayer();
+    </script>    
+           
+            <input type="button" id="editButton" class="buttons" value="Edit">
+            <input type="button" id="styleButton" class="buttons" value="Style">
+            
+            <input type="button" id="blockButton" class="buttons" value="Block this shit!">
+        </div>
+        
+        
+        <div id="editSpace">  
+          <p style="display: none; color:red" id='txtSpaceClear'>Input something!</p>
+           <textarea id="txtSpace"></textarea>      
+         <div>
+            <input type="submit" id="saveBut" class="buttons" value="Save">
+            <input type="button" id="addBut" class="buttons" value="Add">
+            <input type="button" id="clearBut" class="buttons" value="Clear">
+            
+        </div> 
+        
+        
+        <div id="addList">
+        	 
+        	 <fieldset>
+				<legend><h1>Choose What to add:</h1></legend>
+
+				<div>
+					 <form action="#" id="f3" name="f3">
+						<label style="font-size: 76px" ><input type="radio" name="r" style="width:50px;height: 50px" value="Table">Table</label>
+						<label style="font-size: 76px" ><input type="radio" style="width:50px;height: 50px" name="r" value="Table" >List</label>
+					 </form>
+				</div>
+			</fieldset>  
+        
+         <div id="listTab"> 
+            <form name="f4">
+            <div id="tableList">  
+                <p>
+                  
+                    <span>Input count of row:</span>
+                    <input type="number" min="1" max="99" id="rowCount" class="valid" required>
+                </p>
+                <p>
+                    <span>Input count of cell:</span>
+                    <input type="number" min="1" max="99" id="cellCount" class="valid" required>
+                </p>
+            
+            <h1>Table style:</h1>
+            
+            <p>Input width of cell:
+            <input type="number" min="1" max="99"  id="cellWidth" class="valid" required></p>
+            
+            <p>Input height of cell:
+            <input type="number" min="1" max="99"  id="cellHeight" class="valid" required></p>
+            
+            <p><span>Border width:</span>
+                <input type="number" min="1" max="99"  id="borderWidth" class="valid" required>
+           
+                <span>Border type:</span>
+                <select id="borderType" name="borderType" class="selectStyle">
+                    <option>solid</option>
+                    <option>dotted</option>
+                    <option>dashed</option>
+                    <option>double</option>
+                </select>
+                
+                <span>Border color:</span>
+           
+                <select id="borderColor" name="borderColor" class="selectStyle">
+                    <option>white</option>
+                    <option>red</option>
+                    <option>blue</option>
+                    <option>gray</option>
+                </select>
+	
+		      </p> 
+           
+              <input type="submit" id="createBut" class="buttons" value="Create"/>
+              
+              <input type="button" id="closeBut" class="buttons" value="Close">
+            </div> 
+           </form> 
+            
+            <div id="listList">
+            	<form action="#" name="f5">
+            
+					<fieldset>
+					<legend style="font-weight: bolder; font-size: 46px;">What list do you want?</legend>
+					<label style="font-weight: bolder; font-size: 46px;">
+					<input type="radio" name="b" style="width:35px;height: 35px">An Unordered List
+					</label>
+					<label style="font-weight: bolder; font-size: 46px;">
+					<input type="radio" name="b" style="width:35px;height: 35px">An Ordered List
+					</label>
+					</fieldset>
+	</form>
+        	    
+        	  <form name="f6">     
+        		 <div id="ol">  
+        	    <p><span>Input count of list items:</span>
+        	    <input type="number" min="1" max="99"  id="olListItems" class="valid" required></p>
+        	
+     	     	<p><span>Type of mark:</span>
+      	     	<select id="typeOfMarkOlList" class="selectStyle">
+      	     		<option>type="1"</option>
+      	     		<option>type="A"</option>
+      	     		<option>type="I"</option>
+      	     		<option>type="a"</option>
+      	     	</select> 
+      	     	</p><br/>
+      	     	
+         	<input type="submit" id="createBut2" class="buttons" value="Create"/>
+            
+           		 <input type="button" id="closeBut2" class="buttons" value="Close">
+      	     </div> 
+       	     </form> 
+       	     
+       	    <form name="f7">
+        	  <div id="ul">    
+         	    <p><span>Input count of list items:</span>
+         	    <input type="number" min="1" max="99"  id="ulListItems" class="valid" required></p>
+         	
+         	    <p><span>Type of mark:</span>
+         	    <select id="typeOfMark" class="selectStyle">
+                    <option>circle</option>
+                    <option>disk</option>
+                    <option>square</option>
+         	    </select>
+         	    </p><br/>
+      
+         	<input type="submit" id="createBut3" class="buttons" value="Create"/>
+            
+            <input type="button" id="closeBut3" class="buttons" value="Close">
+           	</div> 
+           </form> 
+            
+             </div>   
+		
+         </div>   
+      
+
+            
+             
+             
+         </div> 
+        </div>
+
+        <div id="styleList">
+            <div class="styleList">
+         
+                <form action="#" name="f1">
+                    <span>Text size:</span>
+                    <label>
+                    <input type="radio" name="r" value="12pt">12pt
+                    </label>
+                    <label>
+                    <input type="radio" name="r" value="14pt">14pt
+                    </label>
+                    <label>
+                    <input type="radio" name="r" value="16pt">16pt
+                    </label>
+                    <label>
+                    <input type="radio" name="r" value="18pt">18pt
+                    </label>
+                    <label>
+                    <input type="radio" name="r" value="20pt">20pt
+                    </label>
+                </form><br/>
+            
+                <form action="#" name="f2">
+                <span>Font Family:</span>
+                <select name="selectList" class="selectStyle">
+                    <option>Times New Roman</option>
+                    <option>Verdana</option>
+                    <option>Arial</option>
+                    <option>Tahoma</option>
+                </select>
+                </form>
+            
+                <div>
+                    <input type="button" id="color" class="buttons" value="Color">
+                    <input type="button" id="bgColor" class="buttons" value="BgPictures">
+                    <input type="button" id="clear" class="buttons" value="Clear Style">
+                </div>
+            
+           
+               <label><input type="checkbox" id="boldText">Bold Text</label>
+                <label><input type="checkbox" id="italicText">Italic Text</label>
+           
+			</div>  
+       <div id="blocks">
+	        <div id="block">
+                <div value="red" class="colorText"></div>
+                <div value="yellow" class="colorText"></div>
+                <div value="green" class="colorText"></div>
+                <div value="purple" class="colorText"></div>
+                <div value="blue" class="colorText"></div>
+                <div value="pink" class="colorText"></div>
+                <div value="gray" class="colorText"></div>
+                <div value="orange" class="colorText"></div>
+                <div value="darkred" class="colorText"></div>
+		
+	        </div>
+
+            <div id="block2">
+                <div id="photo1" class="images"></div>
+                <div id="photo2" class="images"></div>
+                <div id="photo3" class="images"></div>
+                <div id="photo4" class="images"></div>
+                <div id="photo5" class="images"></div>
+                <div id="photo6" class="images"></div>
+                <div id="photo7" class="images"></div>
+                <div id="photo8" class="images"></div>
+                <div id="photo9" class="images"></div>
+            </div>	
+	   </div>
+ 
+    </div>   
+</span>
+         
+   <span id="modalWindow" class="modal">
+
+  <div class="modalContent">
+  
+  <p style="font-size: 46px; margin-bottom:10px">Enter password:</p>
+  <input type="password" id="pas" class="valid" required><br/>
+  <p id="error">Wrong Password!</p>
+  <input type="submit" id="subPas" value="Submit">
+  </div>
+
+</span> 
+      
+        
+
+
+ <script type="text/javascript" src="script.js"></script>  
+</body>
+</html>

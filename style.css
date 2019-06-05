@@ -1,0 +1,166 @@
+body{
+    background-image: url(images/maxresdefault.jpg);
+	background-size: cover;
+	font-family: monospace;
+}
+div{
+    background-clip:border-box;
+	color: white;
+    border-radius: 30px;
+    padding: 1%;
+    margin: 1%;
+}
+#box1{
+    height: 300px;
+	overflow: auto;
+	background-image: url(images/9157aa94e693d90.jpg);
+	background-size: cover;
+	color: white;
+	font-family: monospace;
+	font-size: 10pt;
+}
+#box2{ 
+    display: -webkit-box; 
+    display: -ms-flexbox; 
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.buttons{
+    border: 1px solid black;
+    border-radius: 30px;
+    background-color: darkorange;
+    width: 100px;
+    height: 50px;
+    margin: 10px;
+}
+#txtSpace{
+	min-height: 300px;
+	min-width: 100%;
+	max-height: 300px;
+	max-width: 100%;
+	overflow: auto;
+	border-radius: 30px;
+	background-image: url(images/9157aa94e693d90.jpg);
+	background-size: cover;
+	color: white;
+}
+.selectStyle{
+	border-radius: 30px;
+	background-color:darkgrey;
+}
+#addList{
+	display: none;
+}
+
+#styleList{
+	display: none;
+
+}
+.styleList{
+	text-align: center;
+}
+
+#block{
+	height: 750px;
+	width: 1100px;
+	border: 1px solid black;
+	display: none;
+}
+#block2{
+	height: 750px;
+	width: 1030px;
+	border: 1px solid black;
+	display: none;
+}
+.images{
+	border: 1px solid black;
+	width: 300px;
+	height: 200px;	
+	float: left;
+}
+.colorText{
+	border: 1px solid black;
+	width: 300px;
+	height: 200px;	
+	float: left;
+}
+#editSpace{
+	display: none;
+}
+#f3{
+	display: flex;
+	justify-content:space-around;
+	align-content: center;
+}
+#tableList{
+	display: none;
+}
+#listList{
+	display: none;
+}
+.show{
+	display: block !important;
+}
+
+.valid:invalid {
+  border: 2px solid red;
+}
+
+.valid:valid {
+ 	border: 2px solid green;	
+}
+.modal{
+	display: none; 
+	position: fixed;
+	z-index: 1; 
+	padding-top: 130px;
+	left: 0;
+	top: 0;
+	width: 110%; 
+	height: 100%;
+	margin-left: -1%;	
+	background-image: url(images/peyzazh66.gif);
+	background-size:cover;
+}
+.modalContent {
+  	width: 51%;
+	height: 300px;
+	padding: 3% 0 0 35%;
+}
+#pas{
+	min-width: 300px;	
+}
+#subPas{
+	min-width: 305px;
+	min-height: 50px;
+	font-size: 24px;
+	color: red;
+}
+#error{
+	display: none;
+	}
+#ol{
+	display: none;
+}
+#ul{
+	display: none;
+}
+#playlist{
+	list-style: none;
+}
+#playlist li a{
+    color:white;
+    text-decoration: none;
+}
+#playlist .current-song a{
+	color:yellow;
+}
+#txtSpaceClear{
+	font-size: 46px;
+	text-align: center;
+}
